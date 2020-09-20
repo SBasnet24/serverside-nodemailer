@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.get("/", async (req, res) => {
-  res.send("Hello");
+  res.send("Go to /sendemail and send a post request for sending emails");
 });
 app.post("/sendemail", (req, res, next) => {
   console.log(req.body);
